@@ -1,146 +1,228 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Guijun Ma (Marek) | Personal Website</title>
-  <meta
-    name="description"
-    content="Personal website of Alex Chen, a designer and developer."
-  >
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #1f2937;
-      background: #f8fafc;
-      line-height: 1.7;
-    }
-
-    main {
-      width: min(760px, 90%);
-      margin: auto;
-      padding: 90px 0;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(42px, 8vw, 72px);
-      line-height: 1.1;
-    }
-
-    h2 {
-      margin-top: 52px;
-      font-size: 26px;
-    }
-
-    .intro {
-      max-width: 650px;
-      margin-top: 20px;
-      color: #64748b;
-      font-size: 22px;
-    }
-
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 11px 20px;
-      color: white;
-      background: #111827;
-      border-radius: 8px;
-    }
-
-    .button:hover {
-      background: #374151;
-      text-decoration: none;
-    }
-
-    .project {
-      margin: 24px 0;
-      padding: 22px;
-      background: white;
-      border: 1px solid #e2e8f0;
-      border-radius: 12px;
-    }
-
-    footer {
-      margin-top: 70px;
-      color: #94a3b8;
-      font-size: 14px;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Guijun Ma — Lecturer at HUST working on Physical AI, robot learning, transfer learning, intelligent manufacturing, and battery intelligence.">
+  <meta name="theme-color" content="#102a43">
+  <meta property="og:title" content="Guijun Ma | Physical AI & Intelligent Systems">
+  <meta property="og:description" content="Researching physical intelligence, safe generalization, robot learning, intelligent manufacturing, and battery intelligence at HUST.">
+  <meta property="og:type" content="website">
+  <!-- VERIFY before launch: add canonical URL and og:image after the GitHub Pages address is known. -->
+  <title>Guijun Ma | Physical AI & Intelligent Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/main.js" defer></script>
 </head>
-
 <body>
-  <main>
-    <p>Hello, I'm</p>
-    <h1>Alex Chen</h1>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Guijun Ma, home">
+        <span class="brand-mark">GM</span>
+        <span class="brand-copy"><strong>Guijun Ma</strong><small>Physical AI · HUST</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#recognition">Recognition</a>
+        <a href="#vision">Vision</a>
+        <a class="nav-cta" href="#contact">Connect</a>
+      </div>
+    </nav>
+  </header>
 
-    <p class="intro">
-      I am a product designer and developer based in Wuhan.
-      I create simple, useful, and human-centered digital experiences.
-    </p>
-
-    <a class="button" href="mailto:alex@example.com">
-      Contact Me
-    </a>
-
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I am passionate about design and technology. I enjoy transforming
-        ideas into thoughtful digital products and learning new ways to
-        solve real-world problems.
-      </p>
-    </section>
-
-    <section>
-      <h2>Selected Projects</h2>
-
-      <div class="project">
-        <h3>Project One</h3>
-        <p>
-          A short description of the project, your role, and the result.
-        </p>
-        <a href="#">View project →</a>
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Lecturer · School of Artificial Intelligence and Automation</p>
+        <h1 id="hero-title">Learning physical systems that <em>generalize</em>—and robots that <em>act</em>.</h1>
+        <p class="hero-intro">I am Guijun Ma, a Lecturer at Huazhong University of Science and Technology (HUST). My research connects physical-system modeling, transfer learning, and embodied intelligence to build reliable learning systems for batteries, manufacturing, and contact-rich robotic manipulation.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#research">Explore my research <span aria-hidden="true">↘</span></a>
+          <a class="button text" href="https://scholar.google.com/citations?user=hqjG8jcAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a>
+        </div>
+        <ul class="quick-facts" aria-label="Academic profile highlights">
+          <li><strong>HUST</strong><span>Wuhan, China</span></li>
+          <li><strong>4</strong><span>ESI Highly Cited Papers*</span></li>
+          <li><strong>3,000+</strong><span>Scholar citations*</span></li>
+        </ul>
+        <p class="micro-note">*Public-profile figures reported in the referenced materials; verify and update before launch.</p>
       </div>
 
-      <div class="project">
-        <h3>Project Two</h3>
-        <p>
-          Explain what you created and what problem it solves.
-        </p>
-        <a href="#">View project →</a>
+      <aside class="hero-panel reveal delay-1" aria-label="Research profile">
+        <div class="portrait" role="img" aria-label="Portrait placeholder for Guijun Ma">
+          <span>GM</span>
+          <small>Replace with<br>official portrait</small>
+        </div>
+        <div class="signal-map" aria-hidden="true">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+          <span class="node node-a"></span><span class="node node-b"></span><span class="node node-c"></span>
+          <span class="signal-label label-a">PERCEIVE</span><span class="signal-label label-b">TRANSFER</span><span class="signal-label label-c">ACT</span>
+        </div>
+        <div class="panel-caption">
+          <span class="status-dot"></span>
+          <p><strong>Open to collaboration</strong><br>Robot learning · Physical AI · Industrial intelligence</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="manifesto section-pad">
+      <div class="shell manifesto-grid reveal">
+        <p class="section-kicker">Research identity</p>
+        <blockquote>From <span>observing system states</span>, to <span>understanding their evolution</span>, to <span>changing what happens next</span>.</blockquote>
+        <p>This progression unifies my work: infer latent physical states from partial observations, transfer reliable knowledge across changing domains, and close the loop through prediction-informed decisions and actions.</p>
       </div>
     </section>
 
-    <section>
-      <h2>Connect</h2>
-      <p>
-        <a href="https://github.com/alexchen">GitHub</a> ·
-        <a href="https://www.linkedin.com/in/alexchen">LinkedIn</a> ·
-        <a href="mgj@hust.edu.cn">Email</a>
-      </p>
+    <section class="section-pad shell" id="research" aria-labelledby="research-title">
+      <div class="section-heading reveal">
+        <div><p class="section-kicker">01 · Research</p><h2 id="research-title">One scientific thread,<br>four connected domains.</h2></div>
+        <p>My work studies how intelligent systems can remain useful when observations are incomplete, data are scarce, and the physical world changes.</p>
+      </div>
+      <div class="research-grid">
+        <article class="research-card feature reveal">
+          <span class="card-index">01</span>
+          <div class="card-icon">PI</div>
+          <h3>Physical AI & Safe Generalization</h3>
+          <p>Physics-informed representations, latent-state evolution, world models, and reliable adaptation under distribution shift.</p>
+          <ul class="tag-list"><li>Physics-informed learning</li><li>World models</li><li>Uncertainty</li></ul>
+        </article>
+        <article class="research-card reveal delay-1">
+          <span class="card-index">02</span>
+          <div class="card-icon">RL</div>
+          <h3>Robot Learning & Dexterous Manipulation</h3>
+          <p>Generalizable manipulation from multimodal observations, with emphasis on contact states, skill transfer, and confined-space mobile manipulation.</p>
+          <ul class="tag-list"><li>Visual–tactile learning</li><li>Skill transfer</li><li>Mobile manipulation</li></ul>
+        </article>
+        <article class="research-card reveal delay-2">
+          <span class="card-index">03</span>
+          <div class="card-icon">IM</div>
+          <h3>Robotized Smart Manufacturing</h3>
+          <p>Predictive modeling, calibration, and closed-loop process optimization for robotic machining and complex industrial processes.</p>
+          <ul class="tag-list"><li>Robotic machining</li><li>Closed-loop optimization</li><li>Industrial AI</li></ul>
+        </article>
+        <article class="research-card reveal delay-3">
+          <span class="card-index">04</span>
+          <div class="card-icon">BI</div>
+          <h3>Battery Intelligence</h3>
+          <p>Personalized health estimation, remaining-useful-life prediction, and transferable prognostics for lithium-ion batteries.</p>
+          <ul class="tag-list"><li>State of health</li><li>Prognostics</li><li>Deep transfer learning</li></ul>
+        </article>
+      </div>
     </section>
 
-    <footer>
-      © 2026 Alex Chen. Built with GitHub Pages.
-    </footer>
+    <section class="section-pad publication-section" id="publications" aria-labelledby="pub-title">
+      <div class="shell">
+        <div class="section-heading light reveal">
+          <div><p class="section-kicker">02 · Selected work</p><h2 id="pub-title">Publications that<br>define the trajectory.</h2></div>
+          <p>A selection spanning physical-system prognostics, cross-domain learning, and intelligent robotic manufacturing.</p>
+        </div>
+        <div class="filters reveal" role="group" aria-label="Filter publications">
+          <button class="filter active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" data-filter="robotics" aria-pressed="false">Robotics</button>
+          <button class="filter" data-filter="battery" aria-pressed="false">Battery</button>
+          <button class="filter" data-filter="industrial-ai" aria-pressed="false">Industrial AI</button>
+        </div>
+        <div class="publication-list">
+          <article class="publication reveal" data-category="robotics industrial-ai">
+            <div class="pub-year">2025</div><div class="pub-body"><p class="pub-meta">IEEE Transactions on Automation Science and Engineering · <span>Robotics</span></p><h3>Closed-Loop Parameter Optimization for Robotic Machining Using Physics-Informed Machine Learning and Multiobjective Optimization</h3><p><strong>Guijun Ma</strong>, Zidong Wang, Weibo Liu, Zeyuan Yang, Desheng Huang, Han Ding</p><span class="verify">Verify volume, issue, pages & DOI</span></div><a class="pub-link" href="https://scholar.google.com/scholar?q=Closed-Loop+Parameter+Optimization+for+Robotic+Machining" target="_blank" rel="noopener" aria-label="Find publication on Google Scholar">↗</a>
+          </article>
+          <article class="publication reveal" data-category="battery">
+            <div class="pub-year">2024</div><div class="pub-body"><p class="pub-meta">IEEE Transactions on Neural Networks and Learning Systems · <span>Battery</span></p><h3>A Transfer Learning-Based Method for Personalized State of Health Estimation of Lithium-Ion Batteries</h3><p><strong>Guijun Ma</strong>, Songpei Xu, Tao Yang, Zhenbang Du, Limin Zhu, Han Ding, Ye Yuan</p><p class="citation">35(1), 759–769</p></div><a class="pub-link" href="https://dblp.org/rec/journals/tnn/MaXYDZDY24" target="_blank" rel="noopener" aria-label="Open publication record">↗</a>
+          </article>
+          <article class="publication reveal" data-category="battery">
+            <div class="pub-year">2022</div><div class="pub-body"><p class="pub-meta">Energy & Environmental Science · <span>Cover article</span></p><h3>Real-Time Personalized Health Status Prediction of Lithium-Ion Batteries Using Deep Transfer Learning</h3><p><strong>Guijun Ma</strong>, Songpei Xu, Benben Jiang, Cheng Cheng, Xin Yang, Yue Shen, Tao Yang, Yunhui Huang, Han Ding, Ye Yuan</p><p class="citation">15, 4083–4094</p></div><a class="pub-link" href="https://scholar.google.com/scholar?q=Real-time+personalized+health+status+prediction+of+lithium-ion+batteries" target="_blank" rel="noopener" aria-label="Find publication on Google Scholar">↗</a>
+          </article>
+          <article class="publication reveal" data-category="industrial-ai">
+            <div class="pub-year">2020</div><div class="pub-body"><p class="pub-meta">National Science Review · <span>Industrial AI</span></p><h3>A General End-to-End Diagnosis Framework for Manufacturing Systems</h3><p>Ye Yuan, <strong>Guijun Ma</strong>, Cheng Cheng, Beitong Zhou, Huan Zhao, Hai-Tao Zhang, Han Ding</p><p class="citation">7(2), 418–429</p></div><a class="pub-link" href="https://arxiv.org/abs/1901.02057" target="_blank" rel="noopener" aria-label="Open preprint">↗</a>
+          </article>
+          <article class="publication reveal" data-category="battery">
+            <div class="pub-year">2023</div><div class="pub-body"><p class="pub-meta">Knowledge-Based Systems · <span>Battery</span></p><h3>A Two-Stage Integrated Method for Early Prediction of Remaining Useful Life of Lithium-Ion Batteries</h3><p><strong>Guijun Ma</strong>, Zidong Wang, Weibo Liu, Jingzhong Fang, Yong Zhang, Han Ding, Ye Yuan</p><span class="verify">Verify volume, article number & DOI</span></div><a class="pub-link" href="https://scholar.google.com/scholar?q=A+two-stage+integrated+method+for+early+prediction+of+remaining+useful+life" target="_blank" rel="noopener" aria-label="Find publication on Google Scholar">↗</a>
+          </article>
+        </div>
+        <div class="pub-footer reveal"><p>For the complete and current record, see Google Scholar.</p><a class="button inverse" href="https://scholar.google.com/citations?user=hqjG8jcAAAAJ&hl=en" target="_blank" rel="noopener">View all publications ↗</a></div>
+      </div>
+    </section>
+
+    <section class="section-pad shell" id="projects" aria-labelledby="project-title">
+      <div class="section-heading reveal">
+        <div><p class="section-kicker">03 · Projects</p><h2 id="project-title">From scientific questions<br>to physical systems.</h2></div>
+        <p>Research programs connect methodological advances to high-consequence problems in aviation, advanced manufacturing, and energy systems.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><div class="timeline-date">CURRENT*</div><div><p class="project-type">Principal Investigator · National Natural Science Foundation of China, Young Scientists Fund</p><h3>Cross-Domain Viewpoint–Base Planning for Mobile-Robot Inspection of Missing and Incorrect Assembly in Confined Aircraft-Cabin Spaces</h3><p>Active visual inspection, viewpoint planning, mobile robot positioning, and reliable perception under severe occlusion.</p><span class="verify">Verify official English title, grant number, amount & dates</span></div></article>
+        <article class="timeline-item reveal"><div class="timeline-date">CURRENT*</div><div><p class="project-type">Principal Investigator · Postdoctoral research support</p><h3>Transferable Modeling and Intelligent Prediction for Complex Physical Systems</h3><p>Supported through the China Postdoctoral Science Foundation and a Hubei postdoctoral innovation program, as reported in the referenced profile.</p><span class="verify">Replace with exact project titles, grant numbers & dates</span></div></article>
+        <article class="timeline-item reveal"><div class="timeline-date">2019—23*</div><div><p class="project-type">Research participant · National Key R&D Program of China</p><h3>Process Sensing and Precision Control for Data-Driven Intelligent Machining Lines of Complex Components</h3><p>Contributed to learning-enabled perception and control for complex-component manufacturing.</p><span class="verify">Verify translated title, work-package role & project number</span></div></article>
+      </div>
+    </section>
+
+    <section class="section-pad recognition" id="recognition" aria-labelledby="recognition-title">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div><p class="section-kicker">04 · Recognition & service</p><h2 id="recognition-title">Research impact,<br>community contribution.</h2></div>
+          <p>Recognition of scientific contribution is paired with service to the broader research community.</p>
+        </div>
+        <div class="recognition-grid">
+          <article class="award-card reveal"><span class="award-no">A</span><p class="award-label">Award</p><h3>First Prize, Hubei Provincial Natural Science Award</h3><p>Recognized as the third contributor for collaborative research in intelligent modeling and industrial systems.</p><span class="verify">Verify award year & official project title</span></article>
+          <article class="award-card reveal delay-1"><span class="award-no">E</span><p class="award-label">Research distinction</p><h3>Four ESI Highly Cited Papers</h3><p>Multiple works recognized for field-normalized citation impact across battery intelligence and industrial AI.</p><span class="verify">Verify current count & list the four papers</span></article>
+          <article class="award-card reveal delay-2"><span class="award-no">S</span><p class="award-label">Academic service</p><h3>Editorial & Peer-Review Service</h3><p>Service to journals and conferences in industrial informatics, automation, intelligent manufacturing, and AI.</p><span class="verify">Add verified editorial roles, journal names, TPC memberships & dates</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad shell collaboration" aria-labelledby="collab-title">
+      <div class="collab-copy reveal">
+        <p class="section-kicker">Collaboration</p><h2 id="collab-title">Built for ambitious,<br>cross-boundary work.</h2>
+        <p>At HUST, I work within the intelligent manufacturing and automation community associated with Academician Han Ding and Professor Ye Yuan. I welcome collaborations that combine strong physical insight, real robotic platforms, and learning methods that generalize.</p>
+        <p>Particular interests include visual–tactile manipulation, cross-embodiment skill transfer, confined-space mobile manipulation, physics-informed world models, and industrial validation.</p>
+        <span class="verify">Confirm preferred wording for team affiliations and discloseable industry partners</span>
+      </div>
+      <div class="collab-diagram reveal delay-1" aria-label="Collaboration model">
+        <div class="collab-core">Shared<br><strong>Physical<br>Intelligence</strong></div>
+        <div class="collab-ring ring-one"><span>HUST</span><span>Global labs</span></div>
+        <div class="collab-ring ring-two"><span>Robotics</span><span>Industry</span></div>
+      </div>
+    </section>
+
+    <section class="section-pad vision" id="vision" aria-labelledby="vision-title">
+      <div class="shell vision-grid">
+        <div class="vision-title reveal"><p class="section-kicker">05 · Future vision</p><h2 id="vision-title">Physical Intelligence for Safe, Generalizable Robot Manipulation</h2></div>
+        <div class="vision-path reveal delay-1">
+          <article><span>01</span><div><h3>Recognize hidden physical states</h3><p>Infer contact, deformation, and task state from partial visual, force, and tactile observations.</p></div></article>
+          <article><span>02</span><div><h3>Model action-conditioned evolution</h3><p>Build compact, physics-aware world models that predict how interaction changes the scene.</p></div></article>
+          <article><span>03</span><div><h3>Transfer skills safely</h3><p>Adapt manipulation across objects, tasks, environments, and robot embodiments with limited new data.</p></div></article>
+          <article><span>04</span><div><h3>Close the loop in the real world</h3><p>Unify active perception, mobile positioning, and compliant action for dependable industrial autonomy.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad contact shell" id="contact" aria-labelledby="contact-title">
+      <div class="contact-card reveal">
+        <p class="section-kicker">Let’s work together</p>
+        <h2 id="contact-title">Interested in intelligent systems that understand physics—and act with purpose?</h2>
+        <p>I welcome conversations with international collaborators, prospective students, and industrial partners working at the intersection of AI, robotics, manufacturing, and energy.</p>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:mgj@hust.edu.cn">mgj@hust.edu.cn</a>
+          <a class="button text" href="https://faculty.hust.edu.cn/maguijun1/zh_CN/index.htm" target="_blank" rel="noopener">HUST faculty page ↗</a>
+        </div>
+        <span class="verify">Verify preferred public email before launch</span>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div><a class="brand footer-brand" href="#top"><span class="brand-mark">GM</span><span class="brand-copy"><strong>Guijun Ma</strong><small>Physical AI · HUST</small></span></a><p>School of Artificial Intelligence and Automation<br>Huazhong University of Science and Technology<br>Wuhan, China</p></div>
+      <div><h2>Explore</h2><a href="#research">Research</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#vision">Future vision</a></div>
+      <div><h2>Profiles</h2><a href="https://scholar.google.com/citations?user=hqjG8jcAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar ↗</a><a href="https://dblp.org/pid/232/1961" target="_blank" rel="noopener">DBLP ↗</a><a href="https://faculty.hust.edu.cn/maguijun1/zh_CN/index.htm" target="_blank" rel="noopener">HUST profile ↗</a><span class="verify">Add ORCID & GitHub URLs</span></div>
+    </div>
+    <div class="shell footer-bottom"><p>© <span id="year"></span> Guijun Ma. All rights reserved.</p><p>Built for research without boundaries.</p></div>
+  </footer>
+  <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
 </body>
 </html>
