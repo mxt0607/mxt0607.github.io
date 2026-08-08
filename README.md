@@ -1,6 +1,6 @@
 # Guijun Ma — Academic Homepage
 
-A responsive, one-page academic website prepared for GitHub Pages. It uses plain HTML, CSS, and JavaScript, with no build step or framework.
+A responsive, one-page academic website prepared for GitHub Pages. Its compact, publication-first structure is inspired by the academic-homepage pattern used by Shuran Song's website, while retaining an original visual treatment and Guijun Ma's own research identity. It uses plain HTML, CSS, and JavaScript, with no build step or framework.
 
 ## Publish on GitHub Pages
 
