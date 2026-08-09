@@ -37,21 +37,28 @@ footer{padding:30px;text-align:center;color:#95a0a8;font-size:11px}footer p{marg
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 .visitor-map {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-height: 320px;
-  padding: 10px 0;
+  width: 380px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  min-height: 0;
+  margin: 12px auto;
+  position: relative;
   overflow: hidden;
 }
 
+.visitor-map > div,
 .visitor-map canvas,
-.visitor-map iframe,
+.visitor-map iframe {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+}
+
 .visitor-map img {
   display: block;
-  max-width: 100%;
-  border: 0;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
 }
 
 .visitor-note {
@@ -63,6 +70,6 @@ footer{padding:30px;text-align:center;color:#95a0a8;font-size:11px}footer p{marg
 
 @media (max-width: 480px) {
   .visitor-map {
-    min-height: 260px;
+    width: 260px;
   }
 }
