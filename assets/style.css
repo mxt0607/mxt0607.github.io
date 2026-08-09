@@ -73,3 +73,43 @@ footer{padding:30px;text-align:center;color:#95a0a8;font-size:11px}footer p{marg
     width: 260px;
   }
 }
+@media (min-width: 721px) {
+  .cover-grid {
+    grid-template-columns: repeat(3, 190px);
+    justify-content: center;
+    gap: 22px;
+  }
+
+  .cover-copy {
+    padding-top: 10px;
+  }
+
+  .cover-journal {
+    font-size: 9px;
+  }
+
+  .cover-copy h3,
+  .more-covers h3 {
+    font-size: 15px;
+    line-height: 1.35;
+  }
+
+  .cover-copy > p:last-child {
+    font-size: 11px;
+  }
+
+  .more-covers {
+    padding: 18px;
+  }
+
+  .more-symbol {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+
+  .more-covers p:last-child {
+    font-size: 11px;
+  }
+}
