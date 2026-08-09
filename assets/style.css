@@ -35,3 +35,34 @@ footer{padding:30px;text-align:center;color:#95a0a8;font-size:11px}footer p{marg
 @media(max-width:720px){#page{max-width:100%}.topnav{height:auto;padding:22px 20px;gap:14px;flex-wrap:wrap}.topnav div{gap:7px}section{padding:26px 20px}.profile{grid-template-columns:160px minmax(0,1fr);gap:24px;align-items:start}.portrait{width:160px;height:190px}.portrait:has(img){height:auto;align-self:start}.portrait img{height:auto;object-fit:contain;object-position:center top}.interest-grid,.two-column-lists{grid-template-columns:1fr}.publication{grid-template-columns:130px 1fr;gap:18px}.paper-thumb{width:130px;height:95px;padding:12px}.section-title-row{display:block}.section-title-row>a{display:block;margin:-12px 0 22px}.news-list li{grid-template-columns:52px 1fr}.cover-grid{grid-template-columns:1fr 1fr}.more-covers{grid-column:1/-1;min-height:220px}.more-symbol{margin-bottom:34px}}
 @media(max-width:480px){section{padding-inline:14px}.profile{grid-template-columns:110px minmax(0,1fr);gap:15px}.portrait{width:110px;height:135px}.portrait:has(img){height:auto}.portrait span{font-size:40px}.portrait small{font-size:8px;margin-top:10px}.bio h1{font-size:23px}.bio p{font-size:13px}.publication{grid-template-columns:1fr}.paper-thumb{width:100%;height:105px}.profile-links{line-height:1.7}.topnav{font-size:11px}.cover-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.cover-copy{padding-top:8px}.cover-journal{font-size:8px;letter-spacing:.02em}.cover-copy h3,.more-covers h3{font-size:13px;line-height:1.25}.cover-copy>p:last-child{font-size:10px}.more-covers{grid-column:1/-1;min-height:150px;padding:18px}.more-symbol{width:34px;height:34px;margin-bottom:18px;font-size:22px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.visitor-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 320px;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.visitor-map canvas,
+.visitor-map iframe,
+.visitor-map img {
+  display: block;
+  max-width: 100%;
+  border: 0;
+}
+
+.visitor-note {
+  margin: 10px 0 0;
+  text-align: center;
+  color: #8a96a1;
+  font-size: 11px;
+}
+
+@media (max-width: 480px) {
+  .visitor-map {
+    min-height: 260px;
+  }
+}
