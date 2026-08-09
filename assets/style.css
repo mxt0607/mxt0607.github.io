@@ -76,7 +76,7 @@ footer{padding:30px;text-align:center;color:#95a0a8;font-size:11px}footer p{marg
 @media (min-width: 721px) {
   .cover-grid {
     grid-template-columns: repeat(3, 190px);
-    justify-content: center;
+    justify-content: start;
     gap: 22px;
   }
 
