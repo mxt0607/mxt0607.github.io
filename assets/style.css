@@ -37,7 +37,7 @@ footer{padding:30px;text-align:center;color:#95a0a8;font-size:11px}footer p{marg
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 .visitor-map {
-  width: 480px;
+  width: 600px;
   max-width: 100%;
   aspect-ratio: 1 / 1;
   min-height: 0;
@@ -68,9 +68,9 @@ footer{padding:30px;text-align:center;color:#95a0a8;font-size:11px}footer p{marg
   font-size: 11px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .visitor-map {
-    width: 480px;
+    width: 600px;
   }
 }
 @media (min-width: 721px) {
