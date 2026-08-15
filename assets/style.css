@@ -37,7 +37,7 @@ footer{padding:30px;text-align:center;color:#95a0a8;font-size:11px}footer p{marg
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 .visitor-map {
-  width: 200px;
+  width: 480px;
   max-width: 100%;
   aspect-ratio: 1 / 1;
   min-height: 0;
